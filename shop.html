@@ -65,8 +65,8 @@
         }
         .product-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             padding-bottom: 10px;
             justify-content: center;
         }
@@ -82,9 +82,10 @@
         }
         .product-card img {
             width: 100%;
-            height: auto;
+            height: 200px;
             border-radius: 10px;
             margin-bottom: 10px;
+            object-fit: cover;
         }
         .product-card button {
             background: rgb(136, 0, 106);
@@ -190,11 +191,22 @@
         
         const products = {
             "Projectors": [
-                { id: 1, name: "Epson Projector", price: 600, image: "https://www.pinterest.com/pin/1135329387308068841/" },
-                { id: 2, name: "BenQ Projector", price: 750, image: "https://via.placeholder.com/200" },
-                { id: 3, name: "Optoma Projector", price: 500, image: "https://via.placeholder.com/200" },
-                { id: 4, name: "ViewSonic Projector", price: 450, image: "https://via.placeholder.com/200" },
-                { id: 5, name: "LG Projector", price: 700, image: "https://via.placeholder.com/200" }
+                { id: 1, name: "Epson Projector", price: 38000, image: "posts/Epson.jpg" },
+                { id: 2, name: "BenQ Projector", price: 40000, image: "posts/BenQ Projector.jpg" },
+                { id: 3, name: "Optoma Projector", price: 40000, image: "posts/Optoma Projector.jpg" },
+                { id: 4, name: "ViewSonic Projector", price: 450, image: "posts/ViewSonic Projector.jpg" },
+                { id: 5, name: "LG PF50KA Portable Full HD", price: 700, image: "posts/LG PF50KA Portable Full HD.jpg" },
+                { id: 6, name: "Epson Home Cinema 4010", price: 2000, image: "posts/Epson Home Cinema 4010.jpg" }
+            ],
+            "mi-fi-routers": [
+                { id: 1, name: "TP-Link Deco M5", price: 200, image: "https://via.placeholder.com/200" },
+                { id: 2, name: "TP-Link Deco M5", price: 200, image: "https://via.placeholder.com/200" },
+                { id: 3, name: "TP-Link Deco M5", price: 200, image: "https://via.placeholder.com/200" }
+            ],
+            "Laptops": [
+                { id: 1, name: "HP 15s", price: 1000, image: "https://via.placeholder.com/200" },
+                { id: 2, name: "Dell Inspiron 15", price: 1200, image: "https://via.placeholder.com/200" },
+                { id: 3, name: "Lenovo IdeaPad 3", price: 900, image: "https://via.placeholder.com/200" }
             ],
             "Speakers": [
                 { id: 1, name: "Bose SoundLink Revolve", price: 200, image: "https://via.placeholder.com/200" },
@@ -207,11 +219,7 @@
                 { id: 4, name: "Samsung Galaxy S21", price: 850, image: "https://via.placeholder.com/200" },
                 { id: 5, name: "Google Pixel 6", price: 900, image: "https://via.placeholder.com/200" }
             ],
-            "Laptops": [
-                { id: 5, name: "MacBook Pro", price: 2000, image: "https://via.placeholder.com/200" },
-                { id: 6, name: "Dell XPS 13", price: 1500, image: "https://via.placeholder.com/200" },
-                
-            ],
+            
             "Headphones": [
                 { id: 9, name: "Sony WH-1000XM4", price: 350, image: "https://via.placeholder.com/200" },
                 { id: 10, name: "Bose QuietComfort 45", price: 400, image: "https://via.placeholder.com/200" },
